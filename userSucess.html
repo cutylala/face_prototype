@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- ======================================================================================================================== -->
+    <title>Cuty Face</title>
+      <link rel="shortcut icon" href="favicon.ico" />
+      <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/floating-labels.css" rel="stylesheet">
+  </head>
+  <body>
+      
+      <div class="container col-5" style="text-align: center">
+          <div class="row ">
+            <div class="logo" ></div>
+          </div>
+         <div class="row ">
+              <div class="col" style="">
+                  <div class="card rounded shadow" style="margin: 0 auto;">
+                      <div class="card-body" style="">
+                          <h2 style="font-size: 3rem;letter-spacing: 1rem;">早安!Jane</h2>
+                          <p style="letter-spacing: 0.2rem;">已於2019/06/05 08:28分 上班</p>
+                          <br/><br/><br/>
+                      
+                      </div>
+                      <div style="border: 2px #ddd solid; border-radius: 100%; background: url(image/photo/testMyFace.jpg);background-size: cover;background-position: center; width: 120px; height: 120px;position: absolute; left: 50%; bottom:-60px;margin-left: -60px;  ">
+                      
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+          <br/><br/><br/><br/>
+           <img src="image/loading.gif" ><br/>
+          <div class="row col justify-content-center">
+
+              於<span id="int" class="text-danger">3</span>秒後自動返回
+          </div>
+          <br/><br/>
+          <div class="row col">
+            <p class="" style="font-size: 0.4rem;text-align: center;width: 100%;margin-top:1em ;color: #707070 " >Cuty LALA Studio.版權所有</p>
+          </div>
+          <img data-brackets-id='1445' class="BgDec" src="image/BgDec01.png" style="right:-15%;bottom:-5%;" >
+          <img data-brackets-id='1446' class="BgDec" src="image/BgDec02.png" style="left :-21%;top:30%" >
+          <img data-brackets-id='1447' class="BgDec" src="image/BgDec03.png" style="right: -13%;top:-20%" >
+         
+      </div>
+<!--       <div id="particles-js" style="position: absolute;width: 100%;height: 100%;z-index: -2;"></div>-->
+      
+     
+     
+      <script src='lib/particlesjs/particles.min.js'></script>
+      
+      
+    <!-- ======================================================================================================================== --> 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script>
+        particlesJS.load('particles-js', 'lib/particlesjs/particlesjs-config2.json', function() {
+          console.log('callback - particles.js config loaded');
+        });
+          var int = 3;
+          //setTimeout(function(){location.href='userIndex.html'},5000);
+          setInterval(function(){ 
+              console.log(int);
+              $("#int").html(--int);
+              if(int==0){
+                  location.href='userIndex.html'
+              };
+              
+          },1000);
+      
+      </script>
+      
+  </body>
+</html>
